@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch min-h-[540px] lg:min-h-[580px]">
           
           {/* Left Column: Headline, Copy & CTAs */}
-          <div className="lg:col-span-5 p-8 sm:p-12 lg:p-14 xl:p-16 flex flex-col justify-center z-10 bg-white">
+          <div className="lg:col-span-5 p-8 sm:p-10 lg:p-12 xl:p-14 flex flex-col justify-center z-10 bg-white">
             {/* Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f0f7ff] border border-blue-100 text-[#0080ff] text-xs font-semibold w-fit mb-7 shadow-xs select-none">
               <span className="text-amber-500 font-bold text-sm leading-none">✦</span>
@@ -27,7 +27,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Main Headline - exact line breaks matching reference screenshot */}
-            <h1 className="text-4xl sm:text-5xl xl:text-[58px] font-black tracking-tight text-slate-900 leading-[1.08] mb-6">
+            <h1 className="text-4xl sm:text-5xl xl:text-[56px] font-black tracking-tight text-slate-900 leading-[1.08] mb-6">
               Practice Today. <br />
               <span className="text-[#0080ff] inline-block mt-1">Get Hired</span> <br />
               <span className="text-[#7c3aed] inline-block mt-1">Tomorrow.</span>
@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({
               <button
                 type="button"
                 onClick={onGetStarted}
-                className="px-8 py-3.5 rounded-2xl text-[15px] font-semibold text-white bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#8a2be2] shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
+                className="px-8 py-3.5 rounded-2xl text-[15px] font-semibold text-white bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#8a2be2] shadow-md shadow-blue-500/20 hover:shadow-xl hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
               >
                 Get Started
               </button>
@@ -78,16 +78,16 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Right Column: Hero Visual Image & Floating Badges */}
           <div className="lg:col-span-7 relative min-h-[420px] sm:min-h-[500px] lg:min-h-full w-full overflow-hidden bg-slate-100">
-            {/* Candidate Image */}
+            {/* Candidate Image - aligned left so the cup is fully visible */}
             <img
               src="/hero-candidate.jpg"
               alt="Candidate practicing AI interview"
-              className="w-full h-full object-cover object-[center_35%] select-none"
+              className="w-full h-full object-cover object-[0%_bottom] select-none"
               loading="eager"
             />
 
-            {/* Seamless gradient blend between white text area and image */}
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white via-white/50 to-transparent pointer-events-none" />
+            {/* Subtle fade positioned strictly before the cup on the far-left edge */}
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white via-white/40 to-transparent pointer-events-none" />
 
             {/* Stacked Floating Badges Overlay (Top-Right) */}
             <div className="absolute top-6 right-6 sm:top-8 sm:right-10 flex flex-col gap-3.5 z-20 select-none">
