@@ -13,9 +13,9 @@ export const Hero: React.FC<HeroProps> = ({
   onUploadResume,
 }) => {
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 sm:mt-6 mb-16">
+    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-10 lg:mt-12 mb-20">
       {/* Outer Rounded Hero Card Container */}
-      <div className="relative bg-white rounded-[32px] sm:rounded-[40px] shadow-[0_20px_50px_-10px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.02)] border border-slate-100/90 overflow-hidden">
+      <div className="relative bg-white rounded-[32px] sm:rounded-[42px] shadow-[0_24px_60px_-12px_rgba(0,0,0,0.06),0_2px_8px_rgba(0,0,0,0.02)] border border-slate-100/90 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch min-h-[540px] lg:min-h-[580px]">
           
           {/* Left Column: Headline, Copy & CTAs */}
@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span>AI-Powered Interview Practice</span>
             </div>
 
-            {/* Main Headline - exact line breaks as screenshot */}
+            {/* Main Headline - exact line breaks matching reference screenshot */}
             <h1 className="text-4xl sm:text-5xl xl:text-[58px] font-black tracking-tight text-slate-900 leading-[1.08] mb-6">
               Practice Today. <br />
               <span className="text-[#0080ff] inline-block mt-1">Get Hired</span> <br />
@@ -82,18 +82,18 @@ export const Hero: React.FC<HeroProps> = ({
             <img
               src="/hero-candidate.jpg"
               alt="Candidate practicing AI interview"
-              className="w-full h-full object-cover object-[center_25%] select-none"
+              className="w-full h-full object-cover object-[center_35%] select-none"
               loading="eager"
             />
 
             {/* Seamless gradient blend between white text area and image */}
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/60 to-transparent pointer-events-none" />
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white via-white/50 to-transparent pointer-events-none" />
 
             {/* Stacked Floating Badges Overlay (Top-Right) */}
             <div className="absolute top-6 right-6 sm:top-8 sm:right-10 flex flex-col gap-3.5 z-20 select-none">
               
               {/* Badge 1: Mock Interviews */}
-              <div className="flex items-center gap-3 bg-white/70 hover:bg-white/85 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
+              <div className="flex items-center gap-3 bg-white/80 hover:bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
                 <div className="w-8 h-8 rounded-full bg-[#00b4db] flex items-center justify-center text-white shadow-xs flex-shrink-0">
                   <Video size={16} />
                 </div>
@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Badge 2: AI Feedback */}
-              <div className="flex items-center gap-3 bg-white/70 hover:bg-white/85 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
+              <div className="flex items-center gap-3 bg-white/80 hover:bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
                 <div className="w-8 h-8 rounded-full bg-[#8a2be2] flex items-center justify-center text-white shadow-xs flex-shrink-0">
                   <Sparkles size={16} />
                 </div>
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Badge 3: Track Progress */}
-              <div className="flex items-center gap-3 bg-white/70 hover:bg-white/85 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
+              <div className="flex items-center gap-3 bg-white/80 hover:bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
                 <div className="w-8 h-8 rounded-full bg-[#0072ff] flex items-center justify-center text-white shadow-xs flex-shrink-0">
                   <BarChart2 size={16} />
                 </div>
@@ -123,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Badge 4: Get Hired */}
-              <div className="flex items-center gap-3 bg-white/70 hover:bg-white/85 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
+              <div className="flex items-center gap-3 bg-white/80 hover:bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/60 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-200 hover:translate-x-[-2px]">
                 <div className="w-8 h-8 rounded-full bg-[#00b894] flex items-center justify-center text-white shadow-xs flex-shrink-0">
                   <CheckCircle size={16} />
                 </div>
